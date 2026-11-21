@@ -4,6 +4,7 @@ import Skills from "./Components/Skills";
 import Education from "./Components/Education";
 import Award from "./Components/Award";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ChatWidget from "./Components/ChatWidget";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/Award" element={<Award />} />
         <Route path="/Education" element={<Education />} />
       </Routes>
+      <ChatWidget />
     </BrowserRouter>
   );
 }
